@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		072B2D5F9DA191DE07634FB0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED845169D813719B2F84610 /* LoginView.swift */; };
+		118529C9B6A80FA794BB655B /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CE2F722FB65BDEE9E77E2 /* KeychainStore.swift */; };
+		15F446F9E2B66FA6D1EA4EFB /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1ADF818534515EF997B0E0 /* AppGroup.swift */; };
+		32AB389377967D290570355B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B65CEC3B58F869D39DA1256 /* Theme.swift */; };
+		35218C41AD6D187987934ABF /* HeygroundAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B81ED4A751D1D3457F278E /* HeygroundAPI.swift */; };
+		3F8DB0DEBF650891DB913515 /* HeygroundControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40634C87E4CC94141E1703C /* HeygroundControl.swift */; };
+		4A9B3C167A6E38296EAA5232 /* HeygroundQRWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CD00B8B162C332451D1FAD48 /* HeygroundQRWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A0DFB03F4EF1F57A5770D0E /* HeygroundAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B81ED4A751D1D3457F278E /* HeygroundAPI.swift */; };
+		64182AF51C6316D98BF23C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E746E60CFB614C29C4A518AD /* AppDelegate.swift */; };
+		6A39EB49003F7A05956C3380 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CE2F722FB65BDEE9E77E2 /* KeychainStore.swift */; };
+		7641275838B72A78F3020C0A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13A67C37E30DE041D46490 /* RootView.swift */; };
+		77744A6819F3C7212EDC6E45 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B65CEC3B58F869D39DA1256 /* Theme.swift */; };
+		793B86F0C4EE9FA157016FBE /* QRRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2DB37FECA2F7F5A248599 /* QRRepository.swift */; };
+		7D14E5CAA93D63EF3CF5E157 /* HeygroundQRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23D6B2EB88DC5154E90B3C /* HeygroundQRApp.swift */; };
+		83BB68010CB6AF770AC36D1A /* TodayQRWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB52F5C7510C11FFEECABA /* TodayQRWidget.swift */; };
+		97685452974A1A5BD80392A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F5819365892CFF38C01E64 /* Assets.xcassets */; };
+		B70B3BB8131F6F676792976E /* QRRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2DB37FECA2F7F5A248599 /* QRRepository.swift */; };
+		E01066EDF5C9580466B3D0DB /* Intents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27803ECD43DE8F235CF1BB3F /* Intents.swift */; };
+		E47393CA3B052280B05257C7 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1ADF818534515EF997B0E0 /* AppGroup.swift */; };
+		E8BBAD9F36179AEE74A9E859 /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F71C3FD82AAD24FF4AC76 /* QRView.swift */; };
+		F80A79AD4B4FDACF4E99F41D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A558F611917C09D156DD1B /* LocationManager.swift */; };
+		FB142222FE79B02CFE2E14A4 /* HeygroundQRWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC38557E0FE6836E68FE23D /* HeygroundQRWidgetBundle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D96D0D4403F9C2F393A5AE54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4ADE076300CC320681FDD42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93167926BDA84810A8B08F41;
+			remoteInfo = HeygroundQRWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8F13C83798BC7CC44456B7B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4A9B3C167A6E38296EAA5232 /* HeygroundQRWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05B81ED4A751D1D3457F278E /* HeygroundAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeygroundAPI.swift; sourceTree = "<group>"; };
+		255C60A9541A12D3A419C51F /* HeygroundQRWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeygroundQRWidget.entitlements; sourceTree = "<group>"; };
+		27803ECD43DE8F235CF1BB3F /* Intents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intents.swift; sourceTree = "<group>"; };
+		3D23D6B2EB88DC5154E90B3C /* HeygroundQRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeygroundQRApp.swift; sourceTree = "<group>"; };
+		42F5819365892CFF38C01E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43B2DB37FECA2F7F5A248599 /* QRRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRRepository.swift; sourceTree = "<group>"; };
+		4F07B6B44B68D41CBFD94BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		57BC5523A6650B63562D7F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5AFAFA86AC1411CCE2945EBB /* HeygroundQR.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HeygroundQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B65CEC3B58F869D39DA1256 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5ED845169D813719B2F84610 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5FC38557E0FE6836E68FE23D /* HeygroundQRWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeygroundQRWidgetBundle.swift; sourceTree = "<group>"; };
+		62A558F611917C09D156DD1B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6B13A67C37E30DE041D46490 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		6F1ADF818534515EF997B0E0 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		A13CE2F722FB65BDEE9E77E2 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		CD00B8B162C332451D1FAD48 /* HeygroundQRWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HeygroundQRWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D155401EA70BFE560652B7F8 /* HeygroundQR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeygroundQR.entitlements; sourceTree = "<group>"; };
+		D40634C87E4CC94141E1703C /* HeygroundControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeygroundControl.swift; sourceTree = "<group>"; };
+		D8BB52F5C7510C11FFEECABA /* TodayQRWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayQRWidget.swift; sourceTree = "<group>"; };
+		E746E60CFB614C29C4A518AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC5F71C3FD82AAD24FF4AC76 /* QRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0C993C871892D65E3C941A09 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E746E60CFB614C29C4A518AD /* AppDelegate.swift */,
+				42F5819365892CFF38C01E64 /* Assets.xcassets */,
+				D155401EA70BFE560652B7F8 /* HeygroundQR.entitlements */,
+				3D23D6B2EB88DC5154E90B3C /* HeygroundQRApp.swift */,
+				57BC5523A6650B63562D7F40 /* Info.plist */,
+				62A558F611917C09D156DD1B /* LocationManager.swift */,
+				5ED845169D813719B2F84610 /* LoginView.swift */,
+				EC5F71C3FD82AAD24FF4AC76 /* QRView.swift */,
+				6B13A67C37E30DE041D46490 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4AF37B90C7416F9AF77AE51D /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D40634C87E4CC94141E1703C /* HeygroundControl.swift */,
+				255C60A9541A12D3A419C51F /* HeygroundQRWidget.entitlements */,
+				5FC38557E0FE6836E68FE23D /* HeygroundQRWidgetBundle.swift */,
+				4F07B6B44B68D41CBFD94BC2 /* Info.plist */,
+				27803ECD43DE8F235CF1BB3F /* Intents.swift */,
+				D8BB52F5C7510C11FFEECABA /* TodayQRWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		825C95F26F2AA4B6E108C8FA = {
+			isa = PBXGroup;
+			children = (
+				0C993C871892D65E3C941A09 /* App */,
+				C94BA0055C622A4897CF2D87 /* Shared */,
+				4AF37B90C7416F9AF77AE51D /* Widget */,
+				C8BE2772CA78D339E09BCFFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8BE2772CA78D339E09BCFFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AFAFA86AC1411CCE2945EBB /* HeygroundQR.app */,
+				CD00B8B162C332451D1FAD48 /* HeygroundQRWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C94BA0055C622A4897CF2D87 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6F1ADF818534515EF997B0E0 /* AppGroup.swift */,
+				05B81ED4A751D1D3457F278E /* HeygroundAPI.swift */,
+				A13CE2F722FB65BDEE9E77E2 /* KeychainStore.swift */,
+				43B2DB37FECA2F7F5A248599 /* QRRepository.swift */,
+				5B65CEC3B58F869D39DA1256 /* Theme.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93167926BDA84810A8B08F41 /* HeygroundQRWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071FF076A40A7F8E5846A891 /* Build configuration list for PBXNativeTarget "HeygroundQRWidget" */;
+			buildPhases = (
+				B66B67FC6182DA57E157F521 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeygroundQRWidget;
+			packageProductDependencies = (
+			);
+			productName = HeygroundQRWidget;
+			productReference = CD00B8B162C332451D1FAD48 /* HeygroundQRWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C7E636F530C84A4B4050814F /* HeygroundQR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54983EA7BB6AA2D6945C9645 /* Build configuration list for PBXNativeTarget "HeygroundQR" */;
+			buildPhases = (
+				E932E6B73AF6A439E92B1FE1 /* Sources */,
+				FAAFCAA7B1DC198B504F8380 /* Resources */,
+				F8F13C83798BC7CC44456B7B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C0BC86C086C2D13AC5A666F /* PBXTargetDependency */,
+			);
+			name = HeygroundQR;
+			packageProductDependencies = (
+			);
+			productName = HeygroundQR;
+			productReference = 5AFAFA86AC1411CCE2945EBB /* HeygroundQR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4ADE076300CC320681FDD42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					93167926BDA84810A8B08F41 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					C7E636F530C84A4B4050814F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5F353152307BDE3D198BDC7D /* Build configuration list for PBXProject "HeygroundQR" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 825C95F26F2AA4B6E108C8FA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C8BE2772CA78D339E09BCFFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7E636F530C84A4B4050814F /* HeygroundQR */,
+				93167926BDA84810A8B08F41 /* HeygroundQRWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAAFCAA7B1DC198B504F8380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97685452974A1A5BD80392A2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B66B67FC6182DA57E157F521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47393CA3B052280B05257C7 /* AppGroup.swift in Sources */,
+				35218C41AD6D187987934ABF /* HeygroundAPI.swift in Sources */,
+				3F8DB0DEBF650891DB913515 /* HeygroundControl.swift in Sources */,
+				FB142222FE79B02CFE2E14A4 /* HeygroundQRWidgetBundle.swift in Sources */,
+				E01066EDF5C9580466B3D0DB /* Intents.swift in Sources */,
+				118529C9B6A80FA794BB655B /* KeychainStore.swift in Sources */,
+				B70B3BB8131F6F676792976E /* QRRepository.swift in Sources */,
+				77744A6819F3C7212EDC6E45 /* Theme.swift in Sources */,
+				83BB68010CB6AF770AC36D1A /* TodayQRWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E932E6B73AF6A439E92B1FE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64182AF51C6316D98BF23C13 /* AppDelegate.swift in Sources */,
+				15F446F9E2B66FA6D1EA4EFB /* AppGroup.swift in Sources */,
+				5A0DFB03F4EF1F57A5770D0E /* HeygroundAPI.swift in Sources */,
+				7D14E5CAA93D63EF3CF5E157 /* HeygroundQRApp.swift in Sources */,
+				6A39EB49003F7A05956C3380 /* KeychainStore.swift in Sources */,
+				F80A79AD4B4FDACF4E99F41D /* LocationManager.swift in Sources */,
+				072B2D5F9DA191DE07634FB0 /* LoginView.swift in Sources */,
+				793B86F0C4EE9FA157016FBE /* QRRepository.swift in Sources */,
+				E8BBAD9F36179AEE74A9E859 /* QRView.swift in Sources */,
+				7641275838B72A78F3020C0A /* RootView.swift in Sources */,
+				32AB389377967D290570355B /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C0BC86C086C2D13AC5A666F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93167926BDA84810A8B08F41 /* HeygroundQRWidget */;
+			targetProxy = D96D0D4403F9C2F393A5AE54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		105B8092743EEB4570AE604F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		32697FBEBC60E5BE2F256D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/HeygroundQRWidget.entitlements;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.60hz.heygroundqr.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E54409D7B1B87477FFAD9F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/HeygroundQRWidget.entitlements;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.60hz.heygroundqr.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F8911160D5CEB7692484B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/HeygroundQR.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.60hz.heygroundqr;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFE6E5E33ED05CE9CCFBF628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/HeygroundQR.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.60hz.heygroundqr;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC5D16FC92FE6B3A2FD1CFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		071FF076A40A7F8E5846A891 /* Build configuration list for PBXNativeTarget "HeygroundQRWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E54409D7B1B87477FFAD9F8 /* Debug */,
+				32697FBEBC60E5BE2F256D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		54983EA7BB6AA2D6945C9645 /* Build configuration list for PBXNativeTarget "HeygroundQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE6E5E33ED05CE9CCFBF628 /* Debug */,
+				7F8911160D5CEB7692484B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5F353152307BDE3D198BDC7D /* Build configuration list for PBXProject "HeygroundQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5D16FC92FE6B3A2FD1CFFB /* Debug */,
+				105B8092743EEB4570AE604F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4ADE076300CC320681FDD42 /* Project object */;
+}
