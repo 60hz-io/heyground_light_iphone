@@ -31,6 +31,34 @@ QR을 보여줄 수 있는 유일한 경로다.
 
 → 문서 전제를 "잠금화면 위젯"에서 "오늘 보기 위젯 + iOS 18 잠금화면 Control"로 바꾼다.
 
+**근거 (Apple 공식 문서 원문)**
+
+[WidgetRenderingMode](https://developer.apple.com/documentation/widgetkit/widgetrenderingmode) — Overview
+
+> The system can modify the appearance of accessory family widgets. For example, it renders
+> widgets on the Lock Screen on iPhone using the vibrant mode, while it renders widget-based
+> complications in watchOS using either the fullColor or accented modes, depending on the watch
+> face and the user's settings.
+
+[WidgetRenderingMode.vibrant](https://developer.apple.com/documentation/widgetkit/widgetrenderingmode/vibrant)
+
+> The system desaturates the widget, making a monochrome version that it uses to create an
+> adaptive, vibrant effect.
+
+[Creating accessory widgets and watch complications](https://developer.apple.com/documentation/widgetkit/creating-accessory-widgets-and-watch-complications)
+
+> Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
+>
+> WidgetKit allows you to extend the reach of your app to the Lock Screen on iPhone and iPad,
+> and to the Smart Stack on Apple Watch as accessory widgets.
+
+`fullColor`는 watchOS 문맥에서만 언급되고 iPhone 잠금화면에는 해당되지 않는다.
+[WidgetFamily](https://developer.apple.com/documentation/widgetkit/widgetfamily)의 `systemSmall`
+등 system 계열 설명에는 잠금화면 언급이 없다.
+
+Apple이 "system 계열은 잠금화면에 못 쓴다"고 부정문으로 명시하진 않는다. 근거는 "잠금화면에
+놓이는 위젯은 accessory 계열"이라는 긍정 서술과, 그 계열이 vibrant로 렌더링된다는 서술이다.
+
 ### 1.2 인증 설계가 없다
 
 `QRAPI.fetchQR()`이 무인증 `GET /qr`을 호출한다. 실제 QR은 heyground OAuth 토큰이 있어야
