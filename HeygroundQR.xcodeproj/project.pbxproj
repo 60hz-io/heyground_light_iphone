@@ -13,6 +13,7 @@
 		32AB389377967D290570355B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B65CEC3B58F869D39DA1256 /* Theme.swift */; };
 		35218C41AD6D187987934ABF /* HeygroundAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B81ED4A751D1D3457F278E /* HeygroundAPI.swift */; };
 		3F8DB0DEBF650891DB913515 /* HeygroundControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40634C87E4CC94141E1703C /* HeygroundControl.swift */; };
+		44B92BED57F6313D9550D285 /* QRThrottle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D617A9046B40F984AB768FC /* QRThrottle.swift */; };
 		4A9B3C167A6E38296EAA5232 /* HeygroundQRWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CD00B8B162C332451D1FAD48 /* HeygroundQRWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5A0DFB03F4EF1F57A5770D0E /* HeygroundAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B81ED4A751D1D3457F278E /* HeygroundAPI.swift */; };
 		64182AF51C6316D98BF23C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E746E60CFB614C29C4A518AD /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 		E01066EDF5C9580466B3D0DB /* Intents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27803ECD43DE8F235CF1BB3F /* Intents.swift */; };
 		E47393CA3B052280B05257C7 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1ADF818534515EF997B0E0 /* AppGroup.swift */; };
 		E8BBAD9F36179AEE74A9E859 /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F71C3FD82AAD24FF4AC76 /* QRView.swift */; };
+		F4737B6A4EF03869C1BB83FB /* QRThrottle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D617A9046B40F984AB768FC /* QRThrottle.swift */; };
 		F80A79AD4B4FDACF4E99F41D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A558F611917C09D156DD1B /* LocationManager.swift */; };
 		FB142222FE79B02CFE2E14A4 /* HeygroundQRWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC38557E0FE6836E68FE23D /* HeygroundQRWidgetBundle.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +72,7 @@
 		5FC38557E0FE6836E68FE23D /* HeygroundQRWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeygroundQRWidgetBundle.swift; sourceTree = "<group>"; };
 		62A558F611917C09D156DD1B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		6B13A67C37E30DE041D46490 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		6D617A9046B40F984AB768FC /* QRThrottle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRThrottle.swift; sourceTree = "<group>"; };
 		6F1ADF818534515EF997B0E0 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		A13CE2F722FB65BDEE9E77E2 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
 		CD00B8B162C332451D1FAD48 /* HeygroundQRWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HeygroundQRWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +139,7 @@
 				05B81ED4A751D1D3457F278E /* HeygroundAPI.swift */,
 				A13CE2F722FB65BDEE9E77E2 /* KeychainStore.swift */,
 				43B2DB37FECA2F7F5A248599 /* QRRepository.swift */,
+				6D617A9046B40F984AB768FC /* QRThrottle.swift */,
 				5B65CEC3B58F869D39DA1256 /* Theme.swift */,
 			);
 			path = Shared;
@@ -243,6 +247,7 @@
 				E01066EDF5C9580466B3D0DB /* Intents.swift in Sources */,
 				118529C9B6A80FA794BB655B /* KeychainStore.swift in Sources */,
 				B70B3BB8131F6F676792976E /* QRRepository.swift in Sources */,
+				44B92BED57F6313D9550D285 /* QRThrottle.swift in Sources */,
 				77744A6819F3C7212EDC6E45 /* Theme.swift in Sources */,
 				83BB68010CB6AF770AC36D1A /* TodayQRWidget.swift in Sources */,
 			);
@@ -260,6 +265,7 @@
 				F80A79AD4B4FDACF4E99F41D /* LocationManager.swift in Sources */,
 				072B2D5F9DA191DE07634FB0 /* LoginView.swift in Sources */,
 				793B86F0C4EE9FA157016FBE /* QRRepository.swift in Sources */,
+				F4737B6A4EF03869C1BB83FB /* QRThrottle.swift in Sources */,
 				E8BBAD9F36179AEE74A9E859 /* QRView.swift in Sources */,
 				7641275838B72A78F3020C0A /* RootView.swift in Sources */,
 				32AB389377967D290570355B /* Theme.swift in Sources */,

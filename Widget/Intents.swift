@@ -12,6 +12,8 @@ struct RefreshQRIntent: AppIntent {
     static var isDiscoverable: Bool = false
 
     func perform() async throws -> some IntentResult {
+        // 연타로 서버를 두드리지 않도록 쿨다운을 둔다.
+        guard QRThrottle.canRefresh() else { return .result() }
         await QRRepository.ensureFresh(force: true)
         WidgetCenter.shared.reloadAllTimelines()
         return .result()
