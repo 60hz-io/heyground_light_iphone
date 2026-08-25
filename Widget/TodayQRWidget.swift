@@ -19,6 +19,9 @@ struct TodayQRWidget: Widget {
         .configurationDisplayName("출입 QR")
         .description("헤이그라운드 출입 QR을 표시합니다. 탭하면 새 QR을 받아옵니다.")
         .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
+        // 시스템 기본 여백(약 16pt)을 끄고 아래에서 직접 여백을 잡는다.
+        // 그래야 작은 위젯에서도 QR 이 앱·웹과 비슷한 크기로 커진다.
+        .contentMarginsDisabled()
     }
 }
 
@@ -91,27 +94,21 @@ struct TodayQRView: View {
     @ViewBuilder
     private var content: some View {
         if let data = entry.imageData, let image = UIImage(data: data) {
-            VStack(spacing: 4) {
-                Image(uiImage: image)
-                    .resizable()
-                    .interpolation(.none)
-                    .scaledToFit()
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    // 만료된 QR 은 흐리게 그려 "이건 못 쓴다"를 눈으로 알린다.
-                    .opacity(isExpired ? 0.3 : 1)
-
-                if isExpired {
-                    Text("만료됨 · 탭하여 갱신")
-                        .font(.system(size: 11, weight: .medium))
-                        .foregroundStyle(Theme.expired)
-                } else if let expiresAt = entry.expiresAt {
-                    Text(expiresAt, style: .timer)
-                        .font(.system(size: 11, weight: .medium))
-                        .monospacedDigit()
-                        .multilineTextAlignment(.center)
-                        .foregroundStyle(Theme.navy.opacity(0.6))
+            Image(uiImage: image)
+                .resizable()
+                .interpolation(.none)
+                .scaledToFit()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .padding(8)
+                // 만료된 QR 은 흐리게 그려 "이건 못 쓴다"를 눈으로 알린다.
+                .opacity(isExpired ? 0.25 : 1)
+                .overlay {
+                    if isExpired {
+                        Text("탭하여 갱신")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(Theme.navy)
+                    }
                 }
-            }
         } else {
             message("탭하여 갱신")
         }
