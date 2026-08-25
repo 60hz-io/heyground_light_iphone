@@ -77,6 +77,7 @@ struct LoginView: View {
                 )
                 password = ""
                 WidgetCenter.shared.reloadAllTimelines()
+                TokenSync.shared.pushToken(KeychainStore.refreshToken)
                 LocationManager.shared.requestAuthorization()
                 onLoggedIn()
             } catch {

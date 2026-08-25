@@ -3,6 +3,7 @@ options:
   bundleIdPrefix: io.60hz
   deploymentTarget:
     iOS: "17.0"
+    watchOS: "10.0"
   createIntermediateGroups: true
 
 settings:
@@ -45,6 +46,11 @@ targets:
           - $(AppIdentifierPrefix)io.60hz.heygroundqr
     dependencies:
       - target: HeygroundQRWidget
+      - target: HeygroundQRWatch
+        embed: true
+        copy:
+          destination: productsDirectory
+          subpath: $(CONTENTS_FOLDER_PATH)/Watch
 
   HeygroundQRWidget:
     type: app-extension
@@ -68,3 +74,23 @@ targets:
           - group.io.60hz.heygroundqr
         keychain-access-groups:
           - $(AppIdentifierPrefix)io.60hz.heygroundqr
+
+  HeygroundQRWatch:
+    type: application
+    platform: watchOS
+    sources:
+      # Intents 는 iOS 위젯·Control 전용이라 워치에서는 뺀다.
+      - path: Shared
+        excludes: [Intents.swift]
+      - path: Watch
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.60hz.heygroundqr.watchkitapp
+        INFOPLIST_KEY_WKCompanionAppBundleIdentifier: io.60hz.heygroundqr
+        INFOPLIST_KEY_CFBundleDisplayName: 출입 QR
+    info:
+      path: Watch/Info.plist
+      properties:
+        CFBundleDisplayName: 출입 QR
+        WKApplication: true
+        WKCompanionAppBundleIdentifier: io.60hz.heygroundqr

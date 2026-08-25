@@ -12,11 +12,14 @@ enum AppGroup {
     /// (기본값 `.complete` 이면 잠긴 화면에서 위젯이 캐시를 못 열어 빈 위젯이 된다.)
     static let fileProtection: FileProtectionType = .completeUntilFirstUserAuthentication
 
+    /// 워치처럼 App Group 을 쓰지 않는 타깃에서는 앱 자체 컨테이너로 떨어진다.
+    /// (워치와 아이폰은 서로 다른 기기라 어차피 컨테이너를 공유할 수 없다.)
     static var containerURL: URL? {
         FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: identifier)
+            ?? FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
     }
 
     static var defaults: UserDefaults? {
-        UserDefaults(suiteName: identifier)
+        UserDefaults(suiteName: identifier) ?? .standard
     }
 }

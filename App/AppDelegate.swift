@@ -11,6 +11,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
         LocationManager.shared.start()
+        TokenSync.shared.activate()
         return true
     }
 }

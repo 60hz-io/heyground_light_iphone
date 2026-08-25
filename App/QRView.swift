@@ -99,6 +99,8 @@ struct QRView: View {
     private func logout() {
         QRRepository.logout()
         WidgetCenter.shared.reloadAllTimelines()
+        // 폰에서 로그아웃하면 워치에 출입 권한이 남지 않도록 함께 지운다.
+        TokenSync.shared.pushToken(nil)
         onLogout()
     }
 }
