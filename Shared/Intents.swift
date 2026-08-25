@@ -21,11 +21,16 @@ struct RefreshQRIntent: AppIntent {
 }
 
 /// 잠금화면 Control 이 누르는 인텐트. 앱을 열어 QR 화면을 띄운다(Face ID 를 거친다).
+///
+/// 이 타입은 앱 타깃에도 컴파일되어야 한다. 위젯 확장에만 있으면 시스템이 앱을 띄우면서
+/// 인텐트를 이어받지 못해 버튼을 눌러도 아무 일도 일어나지 않는다.
 struct OpenQRIntent: AppIntent {
     static var title: LocalizedStringResource = "출입 QR 열기"
     static var description = IntentDescription("출입 QR 화면을 바로 엽니다.")
+    static var isDiscoverable: Bool = false
     static var openAppWhenRun: Bool = true
 
+    @MainActor
     func perform() async throws -> some IntentResult {
         .result()
     }
