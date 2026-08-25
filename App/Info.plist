@@ -24,6 +24,8 @@
 	<string>앱이 닫혀 있어도 회사 도착을 감지해 출입 QR을 미리 준비해두기 위해 '항상 허용'이 필요합니다.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>회사에 도착하면 출입 QR을 미리 준비해두기 위해 위치를 사용합니다.</string>
+	<key>UILaunchScreen</key>
+	<dict/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
 </dict>

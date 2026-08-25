@@ -24,7 +24,6 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: io.60hz.heygroundqr
-        INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
     info:
@@ -32,6 +31,8 @@ targets:
       properties:
         CFBundleDisplayName: 헤이그라운드 QR
         UIStatusBarStyle: UIStatusBarStyleLightContent
+        # 이 키가 없으면 앱이 화면을 다 못 채우고 상하단이 검게 남는다.
+        UILaunchScreen: {}
         # 지오펜스로 회사 도착을 감지해 미리 토큰·QR 을 받아두려면 '항상 허용'이 필요하다.
         NSLocationWhenInUseUsageDescription: 회사에 도착하면 출입 QR을 미리 준비해두기 위해 위치를 사용합니다.
         NSLocationAlwaysAndWhenInUseUsageDescription: 앱이 닫혀 있어도 회사 도착을 감지해 출입 QR을 미리 준비해두기 위해 '항상 허용'이 필요합니다.
